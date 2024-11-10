@@ -1,1 +1,60 @@
 /*  your css code here. If applicable */
+/* Modal default styles (hidden) */
+.modal {
+  display: none; /* Initially hidden */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal content box */
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal header */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Close button */
+.close-modal {
+  font-size: 24px;
+  cursor: pointer;
+  color: #aaa;
+}
+
+/* Modal body */
+.modal-body {
+  padding: 10px 0;
+}
+
+/* Close button hover effect */
+.close-modal:hover {
+  color: #000;
+}
+
+/* Modal open button styles */
+#openModal {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+}
